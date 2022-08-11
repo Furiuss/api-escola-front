@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Title } from "./styled";
+import { Title, Paragrafo } from "./styled";
 
 export function Login() {
   return (
@@ -9,7 +9,7 @@ export function Login() {
         Login
         <small>Oie</small>
       </Title>
-      <p>Lorem ipsum dolor, sit amet consectetur</p>
+      <Paragrafo>VAMOS TODOS NOS DIVERTIR!</Paragrafo>
     </>
   );
 }
