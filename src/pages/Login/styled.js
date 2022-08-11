@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Title = styled.h2`
   small {
@@ -6,10 +6,4 @@ export const Title = styled.h2`
     margin-left: 15px;
     color: #999;
   }
-`;
-
-export const Paragrafo = styled.p`
-  color: aquamarine;
-  font-size: 20px;
-  padding: 10px;
 `;

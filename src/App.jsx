@@ -1,14 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { Header } from './components/Header';
-import { Login } from './pages/Login';
-import GlobalStyle from './styles/GlobalStyles';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <Login />
-      <GlobalStyle />
+      <GlobalStyles />
+      <Outlet />
     </div>
   );
 }
