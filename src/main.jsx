@@ -9,18 +9,15 @@ import Page404 from './pages/Page404';
 import PrivateRoute from './routes/PrivateRoute';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<App />}>
-          <Route path="/" element={<PrivateRoute />}>
-            <Route path="/" element={<Home />} />
-          </Route>
-
-          <Route path="/" element={<Login />} />
-          <Route path="*" element={<Page404 />} />
+  <BrowserRouter>
+    <Routes>
+      <Route element={<App />}>
+        <Route path="/" element={<PrivateRoute />}>
+          <Route path="/" element={<Home />} />
         </Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+        <Route path="/" element={<Login />} />
+        <Route path="*" element={<Page404 />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
