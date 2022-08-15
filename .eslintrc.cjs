@@ -27,6 +27,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'no-param-reassign': 0,
     'prettier/prettier': [
       'error',
       {
