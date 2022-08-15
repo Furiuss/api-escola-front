@@ -1,18 +1,18 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import { Provider } from 'react-redux';
 
+import { store } from './store';
 import { Header } from './components/Header';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
+    <Provider store={store}>
       <Header />
       <GlobalStyles />
       <Outlet />
-      <ToastContainer autoClose={3000} className="toast-container" />
-    </div>
+    </Provider>
   );
 }
 
