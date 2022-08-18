@@ -15,11 +15,11 @@ export default function baseRoutes() {
     <Routes>
       <Route element={<App />}>
         <Route path="/" element={<PrivateRoute />}>
-          <Route path="/" element={<Alunos />} />
           <Route path="/aluno/" element={<Aluno />} />
           <Route path="/aluno/:id/edit" element={<Aluno />} />
           <Route path="/fotos/:id" element={<Fotos />} />
         </Route>
+        <Route path="/alunos" element={<Alunos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Page404 />} />
