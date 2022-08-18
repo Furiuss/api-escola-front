@@ -28,6 +28,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'no-param-reassign': 0,
+    'react/prop-types': 0,
     'prettier/prettier': [
       'error',
       {
