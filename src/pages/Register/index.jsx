@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { isEmail } from 'validator';
 import { get } from 'lodash';
@@ -8,6 +9,8 @@ import { Form } from './styled';
 import axios from '../../services/axios';
 
 export default function Register() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [nome, setNome] = useState('');
   const [password, setPassword] = useState('');
@@ -45,12 +48,12 @@ export default function Register() {
         email,
         password,
       });
-
+      navigate('/login');
       toast.success('Usuário criado com sucesso');
     } catch (err) {
-      toast.error('Erro ao criar usuário');
-      const status = get(e, 'response.status', 0);
-      const errors = get(e, 'response.data.errors', []);
+      const errors = get(err, 'response.data.errors', []);
+
+      errors.map((error) => toast.error(error));
     }
   }
 
