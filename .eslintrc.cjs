@@ -29,6 +29,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'no-param-reassign': 0,
     'react/prop-types': 0,
+    'react/jsx-no-bind': 0,
     'prettier/prettier': [
       'error',
       {
