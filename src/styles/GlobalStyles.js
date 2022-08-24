@@ -25,7 +25,7 @@ export default createGlobalStyle`
     background: ${colors.primaryColor};
     border: none;
     color: white;
-    padding: 16px 20px;
+    padding: 12px 20px;
     border-radius: 4px;
     font-weight: 700;
     transition: 0.15s;
@@ -51,7 +51,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-  max-width: 800px;
+  max-width: 680px;
   margin: 30px auto;
   background: #fce2db;
   padding: 30px;

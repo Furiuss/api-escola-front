@@ -15,9 +15,8 @@ export const Form = styled.form`
 
   input {
     height: 40px;
-    background-color: #171923;
+    background-color: ${colors.secondaryColor};
     border-radius: 5px;
-    color: white;
     font-size: 18px;
     border: 1px solid transparent;
     padding: 0 10px;
@@ -26,5 +25,10 @@ export const Form = styled.form`
     &:focus {
       border: 3px solid ${colors.primaryColor};
     }
+  }
+
+  button {
+    font-weight: 700;
+    font-size: 16px;
   }
 `;
